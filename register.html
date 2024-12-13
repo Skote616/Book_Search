@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Регистрация</h2>
+        <form action="register.php" method="POST">
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="surname" required><br>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="login">Логин:</label>
+            <input type="text" id="login" name="login" required><br>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required><br>
+            <label for="role">Выберите вашу роль:</label><br>
+            <input type="checkbox" id="teacher" name="role" value="teacher">
+            <label for="teacher">Преподаватель</label><br>
+            <input type="checkbox" id="student" name="role" value="student">
+            <label for="student">Студент</label><br>
+            <input type="submit" value="Сохранить">
+        </form>
+    </div>
+</body>
+</html>
